@@ -1,0 +1,8 @@
+ruleName: mysql service is not available
+level: {{.Level}}
+type: {{.Type}}
+datetime: 2023.04.19 10:00:00
+location: instanceID
+business: {{ range $Name, $Value := .Business }}  {{- $Name -}} = {{- $Value -}},{{ end }}
+metrics: cpu负载：xxx,内存可用率: xxx，网络:xxx
+dashboard: https://grafana-cn-tl32sl7ap04.grafana.aliyuncs.com/d/WfQFos-4z/sre-mysql-metrics?orgId=1

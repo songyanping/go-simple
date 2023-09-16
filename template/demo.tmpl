@@ -1,0 +1,9 @@
+{"ruleName": "{{.RuleName}}",
+"level": "{{.Level}}",
+"type": "{{.Type}}",
+"datetime": "{{.DateTime}}",
+"location": "{{.Location}}",
+"business": "{{ range $Name, $Value := .Business }}  {{- $Name -}} = {{- $Value -}},{{ end }}",
+"details": "{{.Details}}",
+"notes": "{{.Notes}}"
+}
